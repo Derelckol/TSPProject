@@ -93,7 +93,7 @@ namespace TSPProject
             MessageBox.Show(
                 $"Алгоритм: {result.AlgorithmName}\n" +
                 $"Довжина: {result.RouteLength:F2}\n" +
-                $"Час виконання: {result.ExecutionTime.TotalMilliseconds:F2} мс\n" +
+                $"Час виконання: {result.ExecutionTime.TotalMilliseconds:F3} мс\n" +
                 $"Шлях: {string.Join(" -> ", result.Route)}",
                 $"{result.AlgorithmName} — результат"
             );
@@ -207,7 +207,7 @@ namespace TSPProject
             {
                 sb.AppendLine($"Алгоритм: {result.AlgorithmName}");
                 sb.AppendLine($"Довжина: {result.RouteLength:F2}");
-                sb.AppendLine($"Час: {result.ExecutionTime.TotalMilliseconds:F2} мс");
+                sb.AppendLine($"Час: {result.ExecutionTime.TotalMilliseconds:F3} мс");
                 sb.AppendLine($"Шлях: {string.Join(" -> ", result.Route)}");
                 sb.AppendLine();
             }
